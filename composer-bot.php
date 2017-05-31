@@ -27,6 +27,7 @@ USAGE
 $command = $_POST['command'];
 $token = $_POST['token'];
 $channel = $_POST['channel_id'];
+print_r($_POST);
 
 # Check the token and make sure the request is from our team
 if($token != 'GYhR1xd7bdRxQj39VkS0tcYR'){ #replace this with the token from your slash command configuration page

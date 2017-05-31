@@ -29,7 +29,7 @@ $token = $_POST['token'];
 $channel = $_POST['channel_id'];
 
 # Check the token and make sure the request is from our team
-if($token != 'XJYNcqdbgelpmZNFZxxLXGOV'){ #replace this with the token from your slash command configuration page
+if($token != 'GYhR1xd7bdRxQj39VkS0tcYR'){ #replace this with the token from your slash command configuration page
   $msg = "The token for the slash command doesn't match. Check your script.";
   die($msg);
 }

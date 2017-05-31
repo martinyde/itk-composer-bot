@@ -22,7 +22,7 @@ USAGE
 
 */
 
-
+print '123';
 # Grab some of the values from the slash command, create vars for post back to Slack
 $command = $_POST['command'];
 $token = $_POST['token'];

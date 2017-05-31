@@ -29,12 +29,6 @@ $token = $_POST['token'];
 $channel = $_POST['channel_id'];
 print_r($_POST);
 
-# Check the token and make sure the request is from our team
-if($token != '439bNvy9gznshu1Jn5MBd6fQ'){ #replace this with the token from your slash command configuration page
-  $msg = $command . "The token for the slash command doesn't match. Check your script.";
-  die($msg);
-}
-
 $fields = array();
 
 slack($fields, $channel);

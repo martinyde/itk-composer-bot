@@ -30,7 +30,7 @@ $channel = $_POST['channel_id'];
 print_r($_POST);
 
 # Check the token and make sure the request is from our team
-if($token != 'GYhR1xd7bdRxQj39VkS0tcYR'){ #replace this with the token from your slash command configuration page
+if($token != '439bNvy9gznshu1Jn5MBd6fQ'){ #replace this with the token from your slash command configuration page
   $msg = $command . "The token for the slash command doesn't match. Check your script.";
   die($msg);
 }
@@ -60,7 +60,7 @@ function slack($fields, $channel) {
     ));
 
   // You can get your webhook endpoint from your Slack settings
-  $ch = curl_init("https://hooks.slack.com/services/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");
+  $ch = curl_init("https://hooks.slack.com/services/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");
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

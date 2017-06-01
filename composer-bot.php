@@ -22,7 +22,10 @@ USAGE
 
 */
 
-print '123';
+$ch = curl_init("https://hooks.slack.com/services/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");
+$user_agent = "Slackipedia/1.0 (https://github.com/mccreath/slackipedia; mccreath@gmail.org)";
+$wiki_lang = "en";
+
 # Grab some of the values from the slash command, create vars for post back to Slack
 $command = $_POST['command'];
 $token = $_POST['token'];
@@ -54,7 +57,7 @@ function slack($fields, $channel) {
     ));
 
   // You can get your webhook endpoint from your Slack settings
-  $ch = curl_init("https://hooks.slack.com/services/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");
+
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
